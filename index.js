@@ -4,6 +4,12 @@
 const express = require('express');
 const app = express();
 
+app.use(express.static('public'));
+
+// css files
+app.use('/css', express.static(__dirname + '/css'));
+app.use('/fonts', express.static(__dirname + '/fonts'));
+
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });

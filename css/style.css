@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'SF Text';
+    src: url('../fonts/SFUIDText-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Text';
+    src: url('../fonts/SFUIDText-Heavy.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Text';
+    src: url('../fonts/SFUIDisplay-LightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Display';
+    src: url('../fonts/SFUIDisplay-Regualar.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SF Display';
+    src: url('../fonts/SFUIDisplay-Heavy.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Display';
+    src: url('../fonts/SFUIDisplay-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'SF Text', sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    text-align: center;
+}
