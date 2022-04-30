@@ -1,8 +1,45 @@
-#hero-section {
+body {
+    overflow: hidden; /* Hide scrollbars */
+}
+
+#zero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     min-height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#one > video {
+    width: 720px;
+}
+
+#two > div {
+    display: flex;
+    flex-direction: row;
+
+    width: 80%;
+}
+
+#two > div > p{
+    text-align: start;
+}
+
+#eng-crazyones {
+    margin-bottom: 2px;
+}
+
+#ita-crazyones {
+    margin: 2px auto 12px auto;
+    color: #555555;
 }

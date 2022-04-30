@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'SF Text';
-    src: url('../fonts/SFUIDText-Regular.otf') format('opentype');
+    src: url('../fonts/SFUIText-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SF Text';
-    src: url('../fonts/SFUIDText-Heavy.otf') format('opentype');
+    src: url('../fonts/SFUIText-Heavy.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SF Text';
-    src: url('../fonts/SFUIDisplay-LightItalic.otf') format('opentype');
+    src: url('../fonts/SFUIText-LightItalic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
@@ -47,7 +47,8 @@ html {
 }
 
 body {
-    font-family: 'SF Text', sans-serif;
+    font-family: 'SF Text';
+    color: #242424;
 
     margin: 0;
     padding: 0;
@@ -55,4 +56,37 @@ body {
     width: 100%;
 
     text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'SF Display';
+    font-weight: bold;
+}
+
+#slide-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#slide-button > div {
+    border: 4px solid black;
+
+    display: flex;
+    flex-direction: row;
+
+    width: 32px;
+    height: 32px;
+}
+
+#slide-button > div:nth-child(1) {
+    margin-right: -4px;
+}
+
+#slide-button > div > img {
+    width: 32px;
+    height: 32px;
 }
