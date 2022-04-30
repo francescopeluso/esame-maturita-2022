@@ -42,12 +42,16 @@
 }
 
 
+/* ---------- */
+
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'SF Text';
+    font-size: 18px;
     color: #242424;
 
     margin: 0;
@@ -64,12 +68,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #slide-button {
+    background-color: white;
+    
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 14px;
 
     display: flex;
     flex-direction: row;
+}
+
+#slide-button > #counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 64px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #slide-button > div {
@@ -82,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 32px;
 }
 
-#slide-button > div:nth-child(1) {
+#slide-button > div {
     margin-right: -4px;
 }
 
