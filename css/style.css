@@ -65,6 +65,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'SF Display';
     font-weight: bold;
+    color: white;
+    background-color: #242424;
+    padding: 4px;
 }
 
 #slide-button {
@@ -106,4 +109,21 @@ h1, h2, h3, h4, h5, h6 {
 #slide-button > div > img {
     width: 32px;
     height: 32px;
+}
+
+button {
+    font-family: 'SF Display';
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 16px;
+    background-color: #242424;
+    color: white;
+    border: none;
+
+    transition: all .25s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    text-decoration: underline;
 }

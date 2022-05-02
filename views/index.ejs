@@ -4,6 +4,7 @@
     <%- include('../partials/head') %>
     <title>Francesco Peluso - Maturità 2022</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
@@ -15,8 +16,10 @@
                 <object data="./svg/hello_variation.svg" type="image/svg+xml"></object>
                 <!-- <img src="./svg/hello_variation.svg" alt="hello"> -->
             </div>
-            <span><strong>Francesco Peluso</strong> // Informatica  - 5°A&nbsp;&nbsp;A.S.2021/22</span>
-            <span>IIS "Mattei-Fortunato" Eboli (SA)</span>
+            <span class="typewrite"><strong>Francesco Peluso</strong> // Informatica  - 5°A&nbsp;&nbsp;A.S.2021/22
+            <br>IIS "Mattei-Fortunato" Eboli (SA)</span>
+
+            <span id="page-note">Usa le <i class="fa fa-caret-square-o-left"></i> <i class="fa fa-caret-square-o-up"></i> <i class="fa fa-caret-square-o-right"></i> <i class="fa fa-caret-square-o-down"></i> o i bottoni nell'angolo inferiore destro per scorrere la pagina </span>
 
         </section>
 
@@ -29,7 +32,7 @@
         </section>
 
         <section id="two">
-            <h2>Steve Jobs: chi era?</h2>
+            <h2 class="typewrite">Steve Jobs: chi era?</h2>
             <div>
                 <img src="./img/steve-mac.png" id="steve-mac" alt="Steve con un Macintosh">
                 <p>
@@ -122,13 +125,14 @@
             interval: 200
         });
 
-        document.getElementsByClassName('.item').forEach(() => {
-            ScrollReveal().reveal('.item', {
+        document.querySelectorAll('.item').forEach((item) => {
+            ScrollReveal().reveal(item, {
                 duration: Math.random() * 3500,
                 origin: 'bottom',
                 interval: 200
             });
         });
+
     </script>
 </body>
 </html>

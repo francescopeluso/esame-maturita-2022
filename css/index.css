@@ -19,6 +19,15 @@ body {
     width: 192px;
 }
 
+#page-note {
+    margin-top: 160px;
+    margin-bottom: -160px;
+    background-color: #242424;
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -29,7 +38,7 @@ section {
 }
 
 #one > video {
-    width: 65%;
+    width: 50%;
 }
 
 #two > div > * {
@@ -47,6 +56,7 @@ section {
 
 #steve-mac {
     border: 8px solid black;
+    transform: rotate(-1deg);
 }
 
 #two > div > p{
@@ -58,8 +68,9 @@ section {
 }
 
 #ita-crazyones {
-    margin: 2px auto 12px auto;
-    color: #555555;
+    margin: 2px auto 12px auto !important;
+    color: black !important;
+    background-color: #FFF !important;
 }
 
 #links {
@@ -73,13 +84,13 @@ section {
     justify-content: space-around;
     align-items: center;
 
-    width: 80%;
+    width: 65%;
 }
 
 .item {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
 
     background-color: #242424;
     color: white;
@@ -87,7 +98,7 @@ section {
     margin: 4px;
 
     width: 250px;
-    height: 250px;
+    max-height: 250px;
 
     transition: all ease-in-out .2s;
 }
