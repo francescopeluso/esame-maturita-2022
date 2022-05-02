@@ -4,6 +4,7 @@
     <%- include('../partials/head') %>
     <title>Francesco Peluso - Maturità 2022</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
@@ -20,8 +21,8 @@
         </section>
 
         <section id="one">
-            <h2 id="eng-crazyones">Here's to the crazy ones...</h2>
-            <h3 id="ita-crazyones">Questo è dedicato ai folli...</h3>
+            <h2 id="eng-crazyones">Here's to the <u>crazy ones</u>...</h2>
+            <h3 id="ita-crazyones">Questo è dedicato ai <u>folli</u>...</h3>
             <video autoplay controls>
                 <source src="./video/to-the-crazy-ones.mp4" type="video/mp4">
             </video>
@@ -45,48 +46,43 @@
         <section id="links">
             <h2>Collegamenti effettuati</h2>
             <div id="container">
-                <div id="up-sect">
-                    <div class="item">
-                        <strong>Italiano</strong>
-                        <em>Positivismo, darwinismo e marxismo <br>+ Italo Svevo con capitolo VIII sull'apocalisse (Coscienza di Zeno)</em>
-                    </div>
-                    <div class="item">
-                        <strong>Storia</strong>
-                        <em>L'età dell'oro, l'Occidente in crescita e il consumismo</em>
-                    </div>
-                    <div class="item">
-                        <strong>Inglese</strong>
-                        <em>Apple, the Macintosh Computers and the GUIs</em>
-                    </div>
-                    <div class="item">
-                        <strong>Educazione Civica</strong>
-                        <em>L'innalzamento delle temperature dell'atmosfera</em>
-                    </div>
+                <div class="item">
+                    <strong>Italiano</strong>
+                    <em>Positivismo, darwinismo e marxismo <br>+ Italo Svevo con capitolo VIII sull'apocalisse (Coscienza di Zeno)</em>
                 </div>
-                <hr id="links-line">
-                <div id="down-sect">
-                    <div class="item">
-                        <strong>Matematica</strong>
-                        <em>Modello matematico di Malthus, sulla crescita della popolazione (eq. differenziali)</em>
-                    </div>
-                    <div class="item">
-                        <strong>Informatica</strong>
-                        <em>Database relazionali</em>
-                    </div>
-                    <div class="item">
-                        <strong>Sistemi e Reti</strong>
-                        <em>Reti wireless e mobili</em>
-                    </div>
-                    <div class="item">
-                        <strong>TPSIT</strong>
-                        <em>Architettura client-server e peer-to-peer</em>
-                    </div>
+                <div class="item">
+                    <strong>Storia</strong>
+                    <em>L'età dell'oro, l'Occidente in crescita e il consumismo</em>
+                </div>
+                <div class="item">
+                    <strong>Inglese</strong>
+                    <em>Apple, the Macintosh Computers and the GUIs</em>
+                </div>
+                <div class="item">
+                    <strong>Educazione Civica</strong>
+                    <em>L'innalzamento delle temperature dell'atmosfera</em>
+                </div>
+                <div class="item">
+                    <strong>Matematica</strong>
+                    <em>Modello matematico di Malthus, sulla crescita della popolazione (eq. differenziali)</em>
+                </div>
+                <div class="item">
+                    <strong>Informatica</strong>
+                    <em>Database relazionali</em>
+                </div>
+                <div class="item">
+                    <strong>Sistemi e Reti</strong>
+                    <em>Reti wireless e mobili</em>
+                </div>
+                <div class="item">
+                    <strong>TPSIT</strong>
+                    <em>Architettura client-server e peer-to-peer</em>
                 </div>
             </div>
         </section>
 
         <section id="pcto">
-            <h2>Il nostro progetto PCTO [Phaser Game Jam @ Baronissi (SA)]</h2>
+            <h2>Il nostro progetto PCTO<br>[Phaser Game Jam @ Baronissi (SA)]</h2>
             <a href="./pcto/index.html"><button id="link-game">
                 Apri il gioco!
             </button></a>
@@ -113,6 +109,26 @@
     </div>
 
     <script src="js/slide-page-counter.js"></script>
+    <script>
+        ScrollReveal().reveal('section', {
+            duration: 1500,
+            origin: 'bottom',
+            interval: 200
+        });
 
+        ScrollReveal().reveal('#zero', {
+            duration: 5000,
+            origin: 'bottom',
+            interval: 200
+        });
+
+        document.getElementsByClassName('.item').forEach(() => {
+            ScrollReveal().reveal('.item', {
+                duration: Math.random() * 3500,
+                origin: 'bottom',
+                interval: 200
+            });
+        });
+    </script>
 </body>
 </html>

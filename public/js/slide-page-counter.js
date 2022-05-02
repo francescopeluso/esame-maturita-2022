@@ -7,6 +7,7 @@ let slides = null;
 
 document.onkeydown = (event) => {
     switch (event.keyCode) {
+        case 37:
         case 38:    // up key pressed
             if (counter !== 0) {
                 counter--;
@@ -17,6 +18,7 @@ document.onkeydown = (event) => {
             buttonOpacity();
             break;
 
+        case 39:
         case 40:    // down key pressed
             if (counter !== slides.length) {
                 counter++;
