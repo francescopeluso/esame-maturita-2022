@@ -1,0 +1,14 @@
+{
+    "disciplina": "italiano",
+    "image": "link-to-image",
+    "argomento": [
+        {
+            "titolo": "Positivismo, Darwinismo, Marxismo",
+            "body": "blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla"
+        },
+        {
+            "titolo": "Italo Svevo - Capitolo VIII de La coscienza di Zeno",
+            "body": "blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla"
+        }        
+    ]
+}
