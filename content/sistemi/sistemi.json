@@ -1,0 +1,11 @@
+{
+    "disciplina": "sistemi",
+    "argomento": [
+        {
+            "image": "https://www.shireeninc.com/wp-content/uploads/Wireless-network.jpg",
+            "imageposition": "center",
+            "titolo": "Reti mobili e wireless",
+            "body": "sistemi.html"
+        }     
+    ]
+}

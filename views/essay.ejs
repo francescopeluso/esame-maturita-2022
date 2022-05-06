@@ -16,14 +16,18 @@
             </header>
             <article>
                 <p>
-                    <%- include('../content/' + argument.body) %>
+                    <%- include('../content/' + file.disciplina + '/' + argument.body) %>
                 </p>
             </article>
         <% }); %>
     </main>
-    <footer>
-        Made with &#128154; by <strong>Francesco Peluso</strong><br>
-        Creato in occasione dell'<strong>Esame di Maturità 2022</strong>.
-    </footer>
+    <%- include('../partials/footer') %>
+    <script>
+        ScrollReveal().reveal('body', {
+            duration: 1500,
+            origin: 'bottom',
+            interval: 200
+        });
+    </script>
 </body>
 </html>

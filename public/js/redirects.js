@@ -3,8 +3,8 @@ let items = document.querySelectorAll('.item');
 items.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
-        let url = item.getAttribute('id');
-        window.location.href = url.replace('-item', '');
+        let subject = item.getAttribute('id');
+        window.location.href = `/argomento?materia=${subject.replace('-item', '')}`;
     }
     , false);
 });

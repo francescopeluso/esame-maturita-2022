@@ -1,0 +1,11 @@
+{
+    "disciplina": "storia",
+    "argomento": [
+        {
+            "image": "https://9to5mac.com/wp-content/uploads/sites/6/2015/08/apple-store-italy.jpg",
+            "imageposition": "center",
+            "titolo": "Il consumismo",
+            "body": "storia.html"
+        }     
+    ]
+}

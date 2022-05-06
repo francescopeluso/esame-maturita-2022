@@ -14,7 +14,8 @@ main {
 }
 
 
-section > p {
-    padding: 64px;
-    word-wrap: wrap;
+article > p {
+    padding: 0 48px;
+    word-wrap: break-word;
+    text-align: justify;
 }

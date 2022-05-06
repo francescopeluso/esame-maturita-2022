@@ -1,0 +1,11 @@
+{
+    "disciplina": "civica",
+    "argomento": [
+        {
+            "image": "https://asvis.it/plugins/slir/w960-/public/asvis2/images/Notizie_2021/11.jpg",
+            "imageposition": "center",
+            "titolo": "L'innalzamento delle temperature nel mondo",
+            "body": "civica.html"
+        }     
+    ]
+}

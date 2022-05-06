@@ -1,0 +1,11 @@
+{
+    "disciplina": "tpsit",
+    "argomento": [
+        {
+            "image": "https://www.researchgate.net/profile/Karthika-Veeramani/publication/333160118/figure/fig2/AS:827594865930244@1574325400822/Client-server-and-P2P-network-models.ppm",
+            "imageposition": "center",
+            "titolo": "Le architetture client-server e peer-to-peer",
+            "body": "tpsit.html"
+        }     
+    ]
+}
