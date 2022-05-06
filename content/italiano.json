@@ -1,14 +1,17 @@
 {
     "disciplina": "italiano",
-    "image": "link-to-image",
     "argomento": [
         {
+            "image": "https://www.fisicaquantistica.it/wordpress/wp-content/uploads/2017/10/1506521389-collection-of-25-inspiring-quotes-from-charles-darwin1.jpg",
+            "imageposition": "center",
             "titolo": "Positivismo, Darwinismo, Marxismo",
-            "body": "blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla"
+            "body": "italiano.html"
         },
         {
+            "image": "https://www.gelestatic.it/thimg/Nome4gkVdSLP4FdsIGgDll4ADrg=/960x540/smart/https%3A//ilpiccolo.gelocal.it/image/contentid/policy%3A1.37333564%3A1565418160/image.jpg%3Ff%3Ddetail_558%26h%3D720%26w%3D1280%26%24p%24f%24h%24w%3Da952e14",
+            "imageposition": "calc(center - 120px)",
             "titolo": "Italo Svevo - Capitolo VIII de La coscienza di Zeno",
-            "body": "blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla"
+            "body": "italiano.html"
         }        
     ]
 }

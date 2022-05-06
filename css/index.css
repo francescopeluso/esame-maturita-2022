@@ -101,6 +101,8 @@ section {
     max-height: 250px;
 
     transition: all ease-in-out .2s;
+
+    cursor: pointer;
 }
 
 .item:hover {

@@ -45,11 +45,19 @@ function buttonOpacity() {
 }
 
 window.onload = () => {
-    counter = 0;
-    slides = document.getElementsByTagName("section");
-    slides[counter].scrollIntoView();
-    counter_sect.innerHTML = (counter + 1) + "/" + slides.length;
-    buttonOpacity();
+    if (window.location.href.includes('?section=links')) {
+        counter = 3;
+        slides = document.getElementsByTagName("section");
+        slides[counter].scrollIntoView();
+        counter_sect.innerHTML = (counter + 1) + "/" + slides.length;
+        buttonOpacity();
+    } else {
+        counter = 0;
+        slides = document.getElementsByTagName("section");
+        slides[counter].scrollIntoView();
+        counter_sect.innerHTML = (counter + 1) + "/" + slides.length;
+        buttonOpacity();
+    }
 }
 
 up_button.addEventListener("click", () => {
