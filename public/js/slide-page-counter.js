@@ -45,7 +45,7 @@ function buttonOpacity() {
 }
 
 window.onload = () => {
-    if (window.location.href.includes('?section=links')) {
+    if (window.location.href.includes('#links')) {
         counter = 3;
         slides = document.getElementsByTagName("section");
         slides[counter].scrollIntoView();
