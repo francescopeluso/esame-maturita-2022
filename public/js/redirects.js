@@ -4,7 +4,7 @@ items.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
         let subject = item.getAttribute('id');
-        window.location.href = `/#links`;
+        window.location.href = `/argomento?materia=${subject.replace('-item', '')}`;
     }
     , false);
 });
