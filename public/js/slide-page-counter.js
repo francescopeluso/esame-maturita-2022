@@ -72,7 +72,7 @@ up_button.addEventListener("click", () => {
 });
 
 down_button.addEventListener("click", () => {
-    if (counter !== slides.length) {
+    if (counter !== slides.length - 1) {
         counter++;
         slides[counter].scrollIntoView();
         counter_sect.innerHTML = (counter + 1) + "/" + slides.length;
