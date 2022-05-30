@@ -1,19 +1,99 @@
 <head>
     <style>
-        /* nothing for now */
+        li {
+            display: block;
+            margin-left: 50px;
+            text-align: start;
+        }
     </style>
 </head>
 
 <body>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius ipsum et rutrum pharetra. Sed quam magna, interdum interdum vulputate in, pretium ac velit. Ut accumsan dolor imperdiet, aliquet turpis quis, ultricies velit. Proin eget fringilla tortor. Donec tincidunt felis vitae magna vulputate, sit amet ullamcorper elit laoreet. Vestibulum quis lorem id urna rhoncus scelerisque. Vestibulum tristique non leo nec blandit. Curabitur aliquet viverra est et venenatis. Etiam sollicitudin est in orci venenatis, vitae iaculis ante varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel auctor tortor. Nulla eu fringilla tortor, et pretium augue. Nulla eget pretium dolor. Nulla id purus rhoncus, molestie velit venenatis, interdum lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi porta rhoncus ipsum a feugiat.<br><br>
+        Con il termine “applicazione Web” vengono definiti i software utilizzati attraverso l’uso di tecnologie web e linguaggi specifici.<br><br>
 
-        Pellentesque tincidunt ac sem a efficitur. Sed in sapien tempor, varius sem sit amet, pulvinar magna. Nunc ac nibh sed eros rhoncus mollis at vel ex. Suspendisse dapibus felis tristique scelerisque vulputate. Praesent efficitur molestie dui nec interdum. Nunc convallis fringilla purus in suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis posuere lorem ac euismod. Maecenas id rhoncus leo, ut rhoncus elit. Quisque at risus a lectus sagittis aliquam. Nullam tempus aliquam velit non lacinia.<br><br>
-        
-        Etiam vel placerat ante. Aliquam at leo gravida, pharetra libero vel, rhoncus ipsum. Ut nisi est, iaculis vitae magna feugiat, varius dignissim tortor. Fusce tellus elit, laoreet ac cursus sed, sollicitudin at elit. Pellentesque efficitur suscipit nisl, nec varius purus pretium at. Pellentesque sit amet nibh a massa placerat malesuada. Cras augue ante, pellentesque vel volutpat vitae, egestas ac ante. Nunc eget suscipit risus, nec aliquet odio. Integer blandit, lacus et convallis mollis, quam lorem mollis est, vitae egestas mi risus in mi. Sed eleifend posuere interdum. Donec eu lacus sed nisl auctor dapibus. Aliquam aliquet tincidunt ex, vitae pulvinar turpis fermentum aliquam. Suspendisse tempus nisi vitae erat hendrerit, et sollicitudin ipsum commodo. Quisque id nulla tempus, scelerisque neque at, tincidunt erat. Sed in fermentum risus. Duis lorem quam, porta quis nisi vitae, ullamcorper varius metus.<br><br>
-        
-        Suspendisse et ante bibendum, faucibus arcu sit amet, blandit eros. Pellentesque imperdiet orci eget ligula molestie sodales. Quisque eu mauris cursus velit auctor vestibulum. Mauris eu luctus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur massa sapien, egestas sit amet lacinia et, imperdiet eget ligula. Suspendisse ornare nisi ac est semper, sed hendrerit est condimentum. Donec hendrerit ac velit eu commodo. Suspendisse posuere ut mi in tristique.<br><br>
-        
-        Proin vestibulum bibendum lacus, eget semper risus consequat nec. Ut imperdiet mauris sed augue semper, sit amet vulputate velit scelerisque. Mauris ac nulla velit. Donec iaculis, tellus sed volutpat varius, neque mi laoreet felis, id tincidunt justo turpis at urna. Nunc euismod ultrices scelerisque. Aenean suscipit metus enim, sed pellentesque ipsum sagittis vel. Morbi vel vulputate ipsum. Nullam quis vehicula lectus. Nunc varius, nisi ut commodo cursus, velit diam rhoncus mauris, sit amet rhoncus sapien ipsum vel dolor.<br><br>
+        Definiamo due concetti fondamentali che stanno alla base delle app web:
+        <li>
+            <ul><b>&#8857; tecnologie client-side</b> - dove l’elaborazione dei dati avviene principalmente sul client, tipicamente nel browser.<br>
+            Le tre fasi di elaborazione dei dati possono essere suddivise in:&nbsp;&nbsp;&nbsp;&nbsp;HTTP Req → HTTP Res → Elaborazione.</ul>
+
+            <ul><b>&#8857; tecnologie server-side</b> - dove l’elaborazione dei dati avviene, invece, principalmente sui server ai quali i client effettuano le richieste.<br>
+            L’elaborazione viene divisa qui in:&nbsp;&nbsp;&nbsp;&nbsp;HTTP Req → Elaborazione → HTTP Res.</ul>
+        </li>
+
     </p>
+
+    <p>
+        Il modello client-server è costituito da un insieme di host che gestiscono una (o più) risorse, i serventi o server, e da un insieme di clienti (o client)che richiedono l’accesso ad alcune risorse distribuite gestite dai server.<br><br>
+
+        Inoltre ogni processo server può a sua volta diventare client per richiedere accesso ad altre risorse gestite da altri (processi) server.<br>
+        Per essere precisi, non sono gli host a essere server o client ma i processi che sono in esecuzione su di essi, dove come processo si intende un programma in esecuzione: dato che su un host possono essere in esecuzione più processi, un host può essere contemporaneamente sia client che server.<br><br>
+
+        Un servizio è un’entità astratta che viene fornito da uno o più server che lavorano su macchine spesso differenti e che cooperano via rete.<br>
+        Un socket è formato dalla coppia 'indirizzo IP: numero della porta' che permette di individuare univocamente il gestore di un servizio.<br><br>
+
+        Un esempio di tutto ciò può essere Apache, il quale permette ad un server di offrire un servizio di web server, tipicamente sulla porta 80, quindi identificato in rete locale, per esempio, dall’indirizzo 192.168.1.10:80<br><br>
+
+        Con il modello client-server possiamo venire incontro a due tipi di comunicazione:
+        <li>
+            <ul><b>&#8857; unicast</b> - il server può comunicare solo con un client alla volta;</ul>
+
+            <ul><b>&#8857; multicast</b> - quando al server possono essere connessi più client contemporaneamente, tramite meccanismi di creazione di thread che comunicano con i client su più porte;</ul>
+
+            <ul><b>&#8857; broadcast</b> - quando il server comunica con tutti gli host presenti nella sua stessa rete locale.</ul>
+        </li>
+    </p>
+
+    <p>
+        Le architetture client-server sono normalmente organizzate a livelli (tier) - ogni livello corrisponde ad un nodo o gruppo di nodi di calcolo su cui è distribuito il sistema. Ciascun livello funziona da server per i suoi client nel livello precedente, e da client per il livello successivo, in base al tipo di servizio che fornisce.<br><br>
+
+        Storicamente, l’elaborazione dei dati avveniva unicamente sui server, dove quindi i client servivano solo ad interfacciarsi con i servizi offerti dal server. Con il passare del tempo, l’elaborazione e la gestione logica dei dati è stata suddivisa man mano in tre livelli, dove quello intermedio è rappresentato dal middleware.<br><br>
+
+        Nel  modello ISO/OSI e TCP il livello delle applicazioni si occupa di implementare le applicazioni di rete che vengono utilizzate dall’utente finale, in cui il programmatore non si deve preoccupare dei livelli inferiori ma soltanto utilizzare le primitive di comunicazione messe a disposizione dai diversi protocolli degli altri strati.<br><br>
+
+        Il livello applicazione implementa i vari protocolli, tra cui:
+        <li>
+            <ul><b>&#8857; SNMP</b> - Simple Network Management Protocol;</ul>
+
+            <ul><b>&#8857; SMTP</b> - Simple Mail Transfer Protocol;</ul>
+
+            <ul><b>&#8857; POP3</b> - Post Office Protocol;</ul>
+
+            <ul><b>&#8857; FTP</b> - File Transfer Protocol;</ul>
+
+            <ul><b>&#8857; HTTP</b> - Hypertext Transfer Protocol;</ul>
+
+            <ul><b>&#8857; DNS</b> - Domain Name System.</ul>
+        </li>
+    </p>
+    
+    <p>
+        In generale un’applicazione di rete è costituita da un insieme di programmi che vengono eseguiti su due o più computer contemporaneamente: questi operano interagendo tra loro utilizzando delle risorse comuni, accedendo cioè concorrentemente agli archivi
+        L’applicazione di rete prende anche il nome di applicazione distribuita dato che non viene eseguita su di un solo elaboratore (concentrata).<br>
+        I processi hanno la necessità di scambiare messaggi con gli altri processi della medesima applicazione, sia che essi appartengano alla stessa rete locale oppure che siano remoti.
+        L’identificazione non può avvenire soltanto mediante l’indirizzo IP del destinatario, in quanto quest’ultimo individua soltanto l’host ma non il processo specifico, dunque vengono utilizzati i socket, che identificano i processi in ascolto su porte univoche.<br><br>
+
+        Il primo passo che il programmatore deve effettuare per progettare una applicazione di rete è la scelta della architettura dell’applicazione; sintetizziamo le principali caratteristiche delle architetture attualmente utilizzate, e cioè:
+        <li>
+            <ul>client-server;</ul>
+
+            <ul>peer-to-peer;</ul>
+
+            <ul>architetture ibride (client-server + p2p).</ul>
+        </li>
+    </p>
+
+    <p>
+        Ricordiamo che nell’architettura client-server, in rete deve essere sempre presente il server, attivo, in grado di offrire i suoi servizi e che abbia IP statico.<br><br>
+
+        In un sistema P2P, invece, la rete è formata da un insieme di entità autonome (peers), capaci di auto organizzarsi, che condividono un insieme di risorse distribuite presenti all’interno di una rete.<br>
+
+        Il sistema utilizza tali risorse per fornire una determinata funzionalità in modo completamente o parzialmente decentralizzato.<br><br>
+
+        Nella architettura completamente decentralizzata un peer ha sia funzionalità di client che di server, ed è impossibile localizzare una risorsa mediante un indirizzo IP statico: vengono effettuati nuovi meccanismi di indirizzamento, definiti a livello superiore rispetto al livello IP.<br><br>
+
+        Il P2P centralizzato è un compromesso tra il determinismo del modello client-server e la scalabilità del sistema puro: ha un server centrale (directory server) che conserva informazioni sui peer, e risponde alle richieste su quelle informazioni effettuando quindi la ricerca in modalità centralizzata.
+
+    </p>
+
 </body>
