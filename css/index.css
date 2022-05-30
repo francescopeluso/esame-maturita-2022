@@ -57,10 +57,12 @@ section {
 #steve-mac {
     border: 8px solid black;
     transform: rotate(-1deg);
+    width: 65%;
 }
 
 #two > div > p{
     text-align: start;
+    font-size: 1.65vw;
 }
 
 #eng-crazyones {
@@ -126,5 +128,17 @@ section {
 
     #two > div {
         flex-direction: column;
+    }
+
+    #steve-mac {
+        border: 8px solid black;
+        transform: rotate(-1deg);
+        width: 90%;
+    }
+    
+    #two > div > p{
+        text-align: start;
+        font-size: 18px;
+        margin-top: 12px;
     }
   }
