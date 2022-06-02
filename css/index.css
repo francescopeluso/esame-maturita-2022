@@ -57,7 +57,6 @@ section {
 #steve-mac {
     border: 8px solid black;
     transform: rotate(-1deg);
-    width: 65%;
 }
 
 #two > div > p{
