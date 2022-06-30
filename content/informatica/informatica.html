@@ -5,15 +5,94 @@
 </head>
 
 <body>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius ipsum et rutrum pharetra. Sed quam magna, interdum interdum vulputate in, pretium ac velit. Ut accumsan dolor imperdiet, aliquet turpis quis, ultricies velit. Proin eget fringilla tortor. Donec tincidunt felis vitae magna vulputate, sit amet ullamcorper elit laoreet. Vestibulum quis lorem id urna rhoncus scelerisque. Vestibulum tristique non leo nec blandit. Curabitur aliquet viverra est et venenatis. Etiam sollicitudin est in orci venenatis, vitae iaculis ante varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel auctor tortor. Nulla eu fringilla tortor, et pretium augue. Nulla eget pretium dolor. Nulla id purus rhoncus, molestie velit venenatis, interdum lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi porta rhoncus ipsum a feugiat.<br><br>
+    <h3>Cos'è un database?</h3>
 
-        Pellentesque tincidunt ac sem a efficitur. Sed in sapien tempor, varius sem sit amet, pulvinar magna. Nunc ac nibh sed eros rhoncus mollis at vel ex. Suspendisse dapibus felis tristique scelerisque vulputate. Praesent efficitur molestie dui nec interdum. Nunc convallis fringilla purus in suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis posuere lorem ac euismod. Maecenas id rhoncus leo, ut rhoncus elit. Quisque at risus a lectus sagittis aliquam. Nullam tempus aliquam velit non lacinia.<br><br>
-        
-        Etiam vel placerat ante. Aliquam at leo gravida, pharetra libero vel, rhoncus ipsum. Ut nisi est, iaculis vitae magna feugiat, varius dignissim tortor. Fusce tellus elit, laoreet ac cursus sed, sollicitudin at elit. Pellentesque efficitur suscipit nisl, nec varius purus pretium at. Pellentesque sit amet nibh a massa placerat malesuada. Cras augue ante, pellentesque vel volutpat vitae, egestas ac ante. Nunc eget suscipit risus, nec aliquet odio. Integer blandit, lacus et convallis mollis, quam lorem mollis est, vitae egestas mi risus in mi. Sed eleifend posuere interdum. Donec eu lacus sed nisl auctor dapibus. Aliquam aliquet tincidunt ex, vitae pulvinar turpis fermentum aliquam. Suspendisse tempus nisi vitae erat hendrerit, et sollicitudin ipsum commodo. Quisque id nulla tempus, scelerisque neque at, tincidunt erat. Sed in fermentum risus. Duis lorem quam, porta quis nisi vitae, ullamcorper varius metus.<br><br>
-        
-        Suspendisse et ante bibendum, faucibus arcu sit amet, blandit eros. Pellentesque imperdiet orci eget ligula molestie sodales. Quisque eu mauris cursus velit auctor vestibulum. Mauris eu luctus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur massa sapien, egestas sit amet lacinia et, imperdiet eget ligula. Suspendisse ornare nisi ac est semper, sed hendrerit est condimentum. Donec hendrerit ac velit eu commodo. Suspendisse posuere ut mi in tristique.<br><br>
-        
-        Proin vestibulum bibendum lacus, eget semper risus consequat nec. Ut imperdiet mauris sed augue semper, sit amet vulputate velit scelerisque. Mauris ac nulla velit. Donec iaculis, tellus sed volutpat varius, neque mi laoreet felis, id tincidunt justo turpis at urna. Nunc euismod ultrices scelerisque. Aenean suscipit metus enim, sed pellentesque ipsum sagittis vel. Morbi vel vulputate ipsum. Nullam quis vehicula lectus. Nunc varius, nisi ut commodo cursus, velit diam rhoncus mauris, sit amet rhoncus sapien ipsum vel dolor.<br><br>
+    <p>
+        Un database è un insieme di dati memorizzati senza ridondanze inutili, in grado di servire più di una applicazione contemporaneamente.<br><br>
+
+        Il software che permette la creazione, la modellazione e la gestione di una base di dati, è il DBMS (Database Management System).<br><br>
+
+        I dati possono essere raccolti tramite osservazioni e misurazioni, mentre l’informazione
+        è l'interpretazione e il collegamento tra i dati che permettono di prendere decisioni.
+    </p>
+
+
+    <h3>La fase di progettazione</h3>
+
+    <p>
+        La progettazione di una base di dati può essere suddivisa in quattro fasi:
+        <ul>
+            <li>
+                Raccolta e analisi dei requisiti - attraverso dei colloqui e interviste, gli utenti forniscono al progettista i requisiti del sistema informativo. Le informazioni acquisite vengono messe in apposite raccolte di informazioni e dati;
+            </li>
+            <li>
+                Progettazione concettuale: in base ai requisiti forniti dalla fase precedente, vengono create delle descrizioni di come gli utenti vedono i dati, chiamata vista di utenti. Questa vista verrà poi integrata in uno schema concettuale.
+            </li>
+            <li>
+                Progettazione logica: lo schema concettuale verrà trasformato in uno schema logico. In questa fase si tiene conto del DBMS scelto, che può essere: relazionale o reticolare e gerarchico.
+            </li>
+            <li>
+                Progettazione fisica: vengono definite le strutture di memorizzazione e i parametri, tenendo conto del DBMS scelto.
+            </li>
+        </ul>
+    </p>
+
+
+    <h3>Il modello E/R</h3>
+
+    <p>
+        Per descrivere i dati si usa un modello basato sull’individuazione delle entità di interesse e delle relazioni esistenti tra di loro. Esso è chiamato modello Entity/Relationship detto E/R.<br><br>
+
+        Le entità sono elementi della realtà. Nel modello E/R le entità vengono rappresentate graficamente con un rettangolo.<br><br>
+
+        Gli attributi invece permettono di descrivere un'entità o un'associazione. Essi vengono rappresentati graficamente con dei punti collegati alle entità o associazioni.
+    </p>
+
+
+    <h3>Le chiavi</h3>
+
+    <p>
+        Inoltre esiste un attributo che identifica univocamente ogni record della tabella. Essa è chiamata chiave primaria; nello schema E/R si identifica sottolineando l’attributo.<br><br>
+
+        Esiste invece un attributo che viene chiamata chiave esterna (foreign key), e serve per realizzare il collegamento logico tra le tabelle.<br><br>
+    </p>
+
+
+    <h3>Relazioni tra entità</h3>
+
+    <p>
+        Le entità possono avere una relazione fra di loro. Le relazioni sono i legami logici
+        tra due o più entità.<br><br>
+
+        Esistono diverse relazioni:
+        <ul>
+            <li>
+                Relazione 1:1 - in cui ad ogni elemento del primo insieme corrisponde uno e un solo elemento del secondo insieme.
+            </li>
+            <li>
+                Relazione 1:N - in cui ad ogni elemento del primo insieme corrisponde più elementi del secondo insieme.
+            </li>
+            <li>
+                Relazione N:N - in cui ad un elemento del primo insieme corrisponde a più elementi del secondo insieme e viceversa.
+            </li>
+        </ul>
+    </p>
+
+
+    <h3>Normalizzazione</h3>
+
+    <p>
+        La normalizzazione è un procedimento volto all’eliminazione della ridondanza e del rischio di incoerenza del database. Esistono tre forme normali di normalizzazione:
+        <ul>
+            <li>
+                Prima forma normale - se tutti gli attributi hanno un dominio semplice, e ogni informazione deve essere atomica, cioè un campo deve contenere una e una sola informazione.
+            </li>
+            <li>
+                Seconda forma normale - quando gli attributi non devono derivare dalla chiave primaria.
+            </li>
+            <li>
+                Terza forma normale - quando gli attributi non devono derivare da altri attributi.
+            </li>
+        </ul>
     </p>
 </body>

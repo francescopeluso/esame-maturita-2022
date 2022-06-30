@@ -1,10 +1,6 @@
 <head>
     <style>
-        li {
-            display: block;
-            margin-left: 50px;
-            text-align: start;
-        }
+        /*nothing for now*/
     </style>
 </head>
 
@@ -13,13 +9,13 @@
         Con il termine “applicazione Web” vengono definiti i software utilizzati attraverso l’uso di tecnologie web e linguaggi specifici.<br><br>
 
         Definiamo due concetti fondamentali che stanno alla base delle app web:
-        <li>
-            <ul><b>&#8857; tecnologie client-side</b> - dove l’elaborazione dei dati avviene principalmente sul client, tipicamente nel browser.<br>
-            Le tre fasi di elaborazione dei dati possono essere suddivise in:&nbsp;&nbsp;&nbsp;&nbsp;HTTP Req → HTTP Res → Elaborazione.</ul>
+        <ul>
+            <li><b> tecnologie client-side</b> - dove l’elaborazione dei dati avviene principalmente sul client, tipicamente nel browser.<br>
+            Le tre fasi di elaborazione dei dati possono essere suddivise in:&nbsp;&nbsp;&nbsp;&nbsp;HTTP Req → HTTP Res → Elaborazione.</li>
 
-            <ul><b>&#8857; tecnologie server-side</b> - dove l’elaborazione dei dati avviene, invece, principalmente sui server ai quali i client effettuano le richieste.<br>
-            L’elaborazione viene divisa qui in:&nbsp;&nbsp;&nbsp;&nbsp;HTTP Req → Elaborazione → HTTP Res.</ul>
-        </li>
+            <li><b> tecnologie server-side</b> - dove l’elaborazione dei dati avviene, invece, principalmente sui server ai quali i client effettuano le richieste.<br>
+            L’elaborazione viene divisa qui in:&nbsp;&nbsp;&nbsp;&nbsp;HTTP Req → Elaborazione → HTTP Res.</li>
+        </ul>
 
     </p>
 
@@ -35,13 +31,13 @@
         Un esempio di tutto ciò può essere Apache, il quale permette ad un server di offrire un servizio di web server, tipicamente sulla porta 80, quindi identificato in rete locale, per esempio, dall’indirizzo 192.168.1.10:80<br><br>
 
         Con il modello client-server possiamo venire incontro a due tipi di comunicazione:
-        <li>
-            <ul><b>&#8857; unicast</b> - il server può comunicare solo con un client alla volta;</ul>
+        <ul>
+            <li><b>unicast</b> - il server può comunicare solo con un client alla volta;</li>
 
-            <ul><b>&#8857; multicast</b> - quando al server possono essere connessi più client contemporaneamente, tramite meccanismi di creazione di thread che comunicano con i client su più porte;</ul>
+            <li><b>multicast</b> - quando al server possono essere connessi più client contemporaneamente, tramite meccanismi di creazione di thread che comunicano con i client su più porte;</li>
 
-            <ul><b>&#8857; broadcast</b> - quando il server comunica con tutti gli host presenti nella sua stessa rete locale.</ul>
-        </li>
+            <li><b>broadcast</b> - quando il server comunica con tutti gli host presenti nella sua stessa rete locale.</li>
+        </ul>
     </p>
 
     <p>
@@ -52,19 +48,19 @@
         Nel  modello ISO/OSI e TCP il livello delle applicazioni si occupa di implementare le applicazioni di rete che vengono utilizzate dall’utente finale, in cui il programmatore non si deve preoccupare dei livelli inferiori ma soltanto utilizzare le primitive di comunicazione messe a disposizione dai diversi protocolli degli altri strati.<br><br>
 
         Il livello applicazione implementa i vari protocolli, tra cui:
-        <li>
-            <ul><b>&#8857; SNMP</b> - Simple Network Management Protocol;</ul>
+        <ul>
+            <li><b>SNMP</b> - Simple Network Management Protocol;</li>
 
-            <ul><b>&#8857; SMTP</b> - Simple Mail Transfer Protocol;</ul>
+            <li><b>SMTP</b> - Simple Mail Transfer Protocol;</li>
 
-            <ul><b>&#8857; POP3</b> - Post Office Protocol;</ul>
+            <li><b>POP3</b> - Post Office Protocol;</li>
 
-            <ul><b>&#8857; FTP</b> - File Transfer Protocol;</ul>
+            <li><b>FTP</b> - File Transfer Protocol;</li>
 
-            <ul><b>&#8857; HTTP</b> - Hypertext Transfer Protocol;</ul>
+            <li><b>HTTP</b> - Hypertext Transfer Protocol;</li>
 
-            <ul><b>&#8857; DNS</b> - Domain Name System.</ul>
-        </li>
+            <li><b>DNS</b> - Domain Name System.</li>
+        </ul>
     </p>
     
     <p>
@@ -74,13 +70,13 @@
         L’identificazione non può avvenire soltanto mediante l’indirizzo IP del destinatario, in quanto quest’ultimo individua soltanto l’host ma non il processo specifico, dunque vengono utilizzati i socket, che identificano i processi in ascolto su porte univoche.<br><br>
 
         Il primo passo che il programmatore deve effettuare per progettare una applicazione di rete è la scelta della architettura dell’applicazione; sintetizziamo le principali caratteristiche delle architetture attualmente utilizzate, e cioè:
-        <li>
-            <ul>client-server;</ul>
+        <ul>
+            <li>client-server;</li>
 
-            <ul>peer-to-peer;</ul>
+            <li>peer-to-peer;</li>
 
-            <ul>architetture ibride (client-server + p2p).</ul>
-        </li>
+            <li>architetture ibride (client-server + p2p).</li>
+        </ul>
     </p>
 
     <p>
