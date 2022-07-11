@@ -1,6 +1,23 @@
-# esame-maturita-2022
-Sito web per il mio argomento centrale portato all'Esame di Maturità 2022.
+# Steve Jobs: un'anima digitale
+
 ---
-Made with NodeJS, ExpressJS and CSS.
+
+Progetto realizzato con NodeJS, Express e CSS.
+Realizzato in occasione del mio Esame di Maturità 2022.
+
 ---
-Feel free to take inspiration from this project :)
+
+Per avviare il webserver in locale, usa:
+```
+npm run start
+```
+
+Ricorda di aggiornare pacchetti e dipendenze incluse nel progetto con:
+```
+npm i
+```
+
+
+---
+
+Made by Francesco Peluso.
