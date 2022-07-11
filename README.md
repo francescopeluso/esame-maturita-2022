@@ -1,7 +1,5 @@
 # Steve Jobs: un'anima digitale
 
----
-
 Progetto realizzato con NodeJS, Express e CSS.
 Realizzato in occasione del mio Esame di Maturità 2022.
 
