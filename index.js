@@ -1,11 +1,9 @@
 // Francesco Peluso - Year 2022
 // High School Final Exam Website
 
-// requiring modules from npm and creating express app instance
+// requiring modules from npm and creating epxress app instance
 
 const express = require('express');
-const serverless = require('serverless-http');
-
 const ejs = require('ejs');
 const path = require('path');
 const fs = require('fs');
@@ -14,14 +12,19 @@ const app = express();
 
 
 // declare static assets location
+
 app.use(express.static('public'));
 
+
 // declare css files location
+
 app.use('/css', express.static(__dirname + '/css'));
 app.use('/fonts', express.static(__dirname + '/fonts'));
 app.use('/content', express.static(__dirname + '/content'));
 
+
 // declare file to use as favicon
+
 app.use('/favicon.ico', express.static('favicon.ico'));
 
 
@@ -55,10 +58,8 @@ app.use((req, res) => {
     res.status(404).render(__dirname + '/views/404.ejs');
 });
 
-app.use('/.netlify/functions/api', router);
-module.exports.handler = serverless(app);
 
 // Start Express web server on http://localhost:8080/
-//app.listen(8080, () => {
-//    console.log("Server running on port 8080");
-//})
+app.listen(8080, () => {
+    console.log("Server running on port 8080");
+})
