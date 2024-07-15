@@ -14,7 +14,10 @@
     "ejs": "^3.1.7",
     "express": "^4.17.3",
     "fs": "^0.0.1-security",
+    "netlify-cli": "^17.33.3",
+    "netlify-lambda": "^2.0.16",
     "nodemon": "^2.0.15",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "serverless-http": "^3.2.0"
   }
 }
